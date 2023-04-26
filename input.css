@@ -9,6 +9,20 @@
     background-position: center;
 }
 
+#hero-consult{
+    background-image: url(./images/consultancy-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#b4-footer{
+    background-image: url(./images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .font-size{
     font-size: 4vw;
 }
@@ -41,6 +55,15 @@
     background-color: #F305F8;
     padding: 10px 30px;
     color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.button-light{
+    background-color: #fff;
+    padding: 10px 30px;
+    color: #F305F8;
     border-radius: 20px;
     margin-top: 20px;
     transition: all 0.5s ease;

@@ -8,6 +8,10 @@ module.exports = {
         mainColor: "#fff",
         paragraphColor: "rgba(255, 255, 255, 0.6)",
         para2: "rgba(0, 0, 0, 0.5)",
+        bgColor: "#000000",
+        bgHero: "#F9F9F9",
+        cardBorder: "#FADFFF",
+        cardBg: "#FFFFFF",
       },
       container: {
         center: true,
