@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero{
+    background-image: url(./images/hero-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.font-size{
+    font-size: 4vw;
+}
+
+.font-size-sm{
+    font-size: 25px;
+}
+
+.width{
+    width: 65%;
+}
+
+.search-btn{
+    background-color: #F305F8;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.search-btn:hover{
+    opacity: 0.9;
+}
+
+.input{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    outline: none;
+}
+
+.button{
+    background-color: #F305F8;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.button:hover{
+    opacity: 0.7;
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width:950px) {
+    .width{
+        width: 100%;
+    }
+    #second-page{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #second-page-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+}
