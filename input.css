@@ -97,3 +97,57 @@
         display: none;
     }
 }
+
+
+/* Hide the navigation menu by default */
+nav {
+    display: none;
+  }
+  
+  /* Show the navigation menu and style the hamburger icon on mobile screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+    button.hamburger {
+      display: block;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    .hamburger-box {
+      width: 20px;
+      height: 14px;
+      display: inline-block;
+      position: relative;
+    }
+    .hamburger-inner {
+      width: 100%;
+      height: 2px;
+      background-color: #333;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background-color 0.2s ease;
+    }
+    .hamburger.is-active .hamburger-inner {
+      background-color: #fff;
+    }
+    nav {
+      display: none;
+      flex-basis: 100%;
+      margin-top: 1rem;
+    }
+    nav.visible {
+      display: flex;
+    }
+  }
+  
+  /* Show the navigation menu on desktop screens */
+  @media screen and (min-width: 769px) {
+    nav {
+      display: flex;
+    }
+  }
+  
