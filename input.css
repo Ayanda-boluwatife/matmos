@@ -69,12 +69,23 @@
     transition: all 0.5s ease;
 }
 
+.button-light:hover{
+  background-color: black;
+  opacity: 0.8;
+}
+
 .button:hover{
     opacity: 0.7;
 }
 
 .mobile{
     display: none;
+}
+
+.img-abs{
+  position: absolute;
+  top: 90%;
+  left: 60%;
 }
 
 @media screen and (max-width:950px) {

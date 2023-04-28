@@ -633,6 +633,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-20 {
   gap: 5rem;
 }
@@ -844,12 +848,23 @@ video {
   transition: all 0.5s ease;
 }
 
+.button-light:hover{
+  background-color: black;
+  opacity: 0.8;
+}
+
 .button:hover{
   opacity: 0.7;
 }
 
 .mobile{
   display: none;
+}
+
+.img-abs{
+  position: absolute;
+  top: 90%;
+  left: 60%;
 }
 
 @media screen and (max-width:950px) {
@@ -877,6 +892,67 @@ video {
   }
 }
 
+/* Hide the navigation menu by default */
+
+nav {
+  display: none;
+}
+
+/* Show the navigation menu and style the hamburger icon on mobile screens */
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  button.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .hamburger-box {
+    width: 20px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .hamburger-inner {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.2s ease;
+  }
+
+  .hamburger.is-active .hamburger-inner {
+    background-color: #fff;
+  }
+
+  nav {
+    display: none;
+    flex-basis: 100%;
+    margin-top: 1rem;
+  }
+
+  nav.visible {
+    display: flex;
+  }
+}
+
+/* Show the navigation menu on desktop screens */
+
+@media screen and (min-width: 769px) {
+  nav {
+    display: flex;
+  }
+}
+
 .hover\:text-primaryColor:hover {
   --tw-text-opacity: 1;
   color: rgb(243 5 248 / var(--tw-text-opacity));
@@ -887,16 +963,16 @@ video {
     width: 50%;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -911,3 +987,4 @@ video {
     padding-bottom: 1.25rem;
   }
 }
+  
